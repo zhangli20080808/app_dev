@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		#box {
+			width: 100px;
+			height: 100px;
+			padding: 100px;
+			border: 5px solid #000;
+			perspective: 200px;
+			perspective-origin: right center;
+		}
+		#div {
+			width: 100px;
+			height: 100px;
+			background: red;
+			transition: 3s;
+			transform-origin: center center 0;
+		}
+		#box:hover #div {
+			transform: rotateX(360deg);
+		}
+		/*
+			perspective-origin: center(x) center(y);
+			transform-origin: center(x) center(y) 0;
+			rotate
+				rotateX
+				rotateY
+				rotateZ
+
+			translate
+				translateX
+				translateY
+				translateZ
+				translate3d();	
+		*/
+	</style>
+</head>
+<body>
+<div id="box">
+	<div id="div"></div>
+</div>
+</body>
+</html>
